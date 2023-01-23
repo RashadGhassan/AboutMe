@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="section1">
+      <center>
+        <p id="welcome">Welcome</p>
+      </center>
+    </div>
+    <div class="circle" id="forSec1"></div>
+
+    <div id="section2">
+      <center>
+        <p class="subSec">Short Biography</p>
+        <p id="biography">
+          Hello My name is Rashad Ghassan and I have two nationalities,
+          Jordanian and Filipino. I also speak 3 different languages fluently,
+          Tagalog (Filipino Language), English, and also Arabic. Although I have
+          2 nationalities, I live in Amman Jordan 😊😊😊.
+        </p>
+      </center>
+      <div class="container1">
+        <div class="additionalInfo">
+          <p class="subSec">Education</p>
+          <p id="education">
+            <ul>
+              <li>I'm currently studying in Jordan with a Software Engineer Major in Applied Science Private University. I'm currently in my 2<sup>nd</sup> year and I'm so excited meeting new people in and out the campus.
+              </li>
+            </ul>
+          </p>
+          <br>
+        </div>
+        <div class="additionalInfo">
+          <p class="subSec">Job History</p>
+          <ul id="job" type="disc">
+            <li>June - August, 2020</li>
+            <ul>
+              Work in a car shop, where I was the one who is printing and
+              applying the sticker on cars.
+            </ul>
+            <li>March 2021 - Until then</li>
+            <ul>
+              <li>
+                Run a sticker shop online with differents accounts online
+                including
+                <a href="https://www.instagram.com/animexamman/" target="_blank"
+                  >Instagram</a
+                >, and
+                <a href="https://www.facebook.com/Animex.Amman" target="_blank"
+                  >Facebook</a
+                >
+              </li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="additionalInfo">
+          <p class="subSec">Goals in Life</p>
+          <br>
+          <p id="goal">
+            One of the main goal I want to reach this year is to work in the IT
+            industry for the first time and learn a lot of things with
+            experience I'm going to have in the company.
+          </p>
+          <br>
+        </div>
+      </div>
+    <div class="circle" id="forSec2"></div>
+    <br><br>
+
+    <div id="section3">
+      <center>
+        <p class="title">Mini Game 🕹️</p>
+        <br />
+        <p class="info">Enjoy and have Fun!</p>
+      </center>
+      <br />
+      <div id="question">
+        <center>
+          <p id="ask">
+            These pictures represent all the dish I tried to cook... But there
+            are <b>four dishes</b> that I enjoy cooking. 
+            Can you guess what they are? 
+            <br>
+            <b>(Note! that you have only 3 attempts if you got the answer incorrectly)</b>
+          </p>
+          <table id="choiceTable" name="tbl">
+            <tr>
+              <td>
+                <button class="choice" onclick="checkAnswer('Fried Chicken')">
+                  <img src="img/friedChicken.jpeg" alt="Fried Chicken" />
+                </button>
+                <center name="b">Fried Chicken</center>
+              </td>
+              <td>
+                <button class="choice" onclick="checkAnswer('Shrimp Tempura')">
+                  <img src="img/shrimpTempura.jpg" alt="Shrimp Tempura" />
+                </button>
+                <center>Shrimp Tempura</center>
+              </td>
+              <td>
+                <button class="choice" onclick="checkAnswer('Mansaf')">
+                  <img src="img/mansaf.jpg" alt="Mansaf" />
+                </button>
+                <center>Mansaf</center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button class="choice" onclick="checkAnswer('Grilled Fish')">
+                  <img src="img/grilledFish.jpeg" alt="Grilled Fish" />
+                </button>
+                <center>Grilled Fish</center>
+              </td>
+              <td>
+                <button class="choice" onclick="checkAnswer('Pansit')">
+                  <img src="img/pansit.jpg" alt="Pansit" />
+                </button>
+                <center>Pancit</center>
+              </td>
+              <td>
+                <button class="choice" onclick="checkAnswer('Calamari')">
+                  <img src="img/calamari.jpg" alt="Calamari" />
+                </button>
+                <center>Calamari</center>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button
+                  class="choice"
+                  onclick="checkAnswer('Garlic Butter Shrimp')"
+                >
+                  <img
+                    src="img/garlicButterShrimp.jpg"
+                    alt="Garlic Butter Shrimp"
+                  />
+                </button>
+                <center>Garlic Butter Shrimp</center>
+              </td>
+              <td>
+                <button class="choice" onclick="checkAnswer('Raost Chicken')">
+                  <img src="img/roastChicken.jpg" alt="Calamari" />
+                </button>
+                <center>Raost Chicken</center>
+              </td>
+              <td>
+                <button class="choice" onclick="checkAnswer('Fried Rice')">
+                  <img src="img/friedRice.jpg" alt="Fried Rice" />
+                </button>
+                <center>Fried Rice</center>
+              </td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <br /><br />
+      <div id="result">
+        <br />
+        <div class="subSec">Result:</div> 
+        <br />
+        <div id="tableResult"></div>
+        <p id="message"></p>
+      </div>
+    </div>
+
+    <div id="section4">
+      <br />
+      <center>
+        <p class="topLikes">Top 5</p>
+      </center>
+      <br />
+      <div class="container2">
+        <div id="list1" class="additionalList">
+          <p class="subSec">Hobbies</p>
+          <ol>
+            <li>Cook dishes</li>
+            <li>Like to Travel</li>
+            <li>Listen to Music</li>
+            <li>Hangout with Friends</li>
+            <li>Eat Home-Made Food</li>
+          </ol>
+        </div>
+        <div id="list2" class="additionalList">
+          <p class="subSec">Places I visited</p>
+          <ol>
+            <li>Panggasinan, Philippines</li>
+            <li>Dead Sea, Jordan</li>
+            <li>Tagaytay, Philippines</li>
+            <li>Doha, Qatar</li>
+            <li>Baguio City, Philippines</li>
+          </ol>
+        </div>
+        <div id="list3" class="additionalList">
+          <p class="subSec">Shoe Brands</p>
+          <ol>
+            <li>Adidas</li>
+            <li>Vans</li>
+            <li>Converse</li>
+            <li>Nike</li>
+            <li>Sketchers</li>
+          </ol>
+        </div>
+        <div id="list4" class="additionalList">
+          <p class="subSec">Drinks</p>
+          <ol>
+            <li>Boba Milktea</li>
+            <li>Iced Coffee</li>
+            <li>Nescafe Creamy</li>
+            <li>Red Tea</li>
+            <li>Hot Chocolate</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
